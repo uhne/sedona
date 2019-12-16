@@ -113,10 +113,30 @@
             </p>
         </footer>
             
-        <section class="modal hotel">
+        <section class="modal form">
             <h3>Поиск гостинницы в Седоне</h3>
             <form class="form-hotel" action="" method="POST">
-                
+                <fieldset class="reservation-date">
+                    <p class="checkin-date">
+                        <label for="arrive">Дата заезда:</label>
+                        <input type="text" name="arrive" id="arrive">
+                    </p>
+                    <p class="checkout-date">
+                        <label for="checkout">Дата выезда:</label>
+                        <input type="text" name="checkout" id="checkout">
+                    </p>
+                </fieldset>
+                <fieldset class="reservation-amount">
+                    <p class="adult-age">
+                        <label for="adult">Взрослые:</label>
+                        <input type="text" name="amount" id="adult">
+                    </p>
+                    <p class="child-age">
+                        <label for="child">Дети:</label>
+                        <input type="text" name="amount" id="child">
+                    </p>
+                </fieldset>
+                <button class="button" type="submit">Найти</button>
             </form>
         </section>
     </main>
