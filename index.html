@@ -92,6 +92,12 @@
             <a class="button" href="hotel.html">Поиск гостинницы в Седоне</a>
         </section>
 
+        <section class="map-image">
+            <p class="map-image">
+                <img src="img/sedona-map.jpg" alt="Map of Sedona">
+            </p>
+        </section>
+
         <footer class="main-footer">
             <p class="footer-tag">#visitsedona</p>
             <div class="footer-socials">
@@ -119,21 +125,21 @@
                 <fieldset class="reservation-date">
                     <p class="checkin-date">
                         <label for="arrive">Дата заезда:</label>
-                        <input type="text" name="arrive" id="arrive">
+                        <input type="text" name="arrive" id="arrive" placeholder="24 апреля 2017">
                     </p>
                     <p class="checkout-date">
                         <label for="checkout">Дата выезда:</label>
-                        <input type="text" name="checkout" id="checkout">
+                        <input type="text" name="checkout" id="checkout" placeholder="4 июля 2017">
                     </p>
                 </fieldset>
                 <fieldset class="reservation-amount">
                     <p class="adult-age">
                         <label for="adult">Взрослые:</label>
-                        <input type="text" name="amount" id="adult">
+                        <input type="range" name="amount" id="adult" value="2">
                     </p>
                     <p class="child-age">
                         <label for="child">Дети:</label>
-                        <input type="text" name="amount" id="child">
+                        <input type="range" name="amount" id="child" value="0">
                     </p>
                 </fieldset>
                 <button class="button" type="submit">Найти</button>
