@@ -20,55 +20,58 @@
     </header>
 
     <main class="container">
-      <form action="" method="POST">
-        <fieldset class="infrastructure">
-          <legend>Инфрастркутура:</legend>
-          <ul class="infrastructure-list">
-            <li class="infrastructure-item">
-              <label for="pool">Бассйен</label>
-              <input type="checkbox" name="pool" id="pool" checked>
-            </li>
-            <li class="infrastructure-item">
-                <label for="parking">Парковка</label>
-                <input type="checkbox" name="parking" id="parking">
-            </li>
-            <li class="infrastructure-item">
-                <label for="internet">WI-FI</label>
-                <input type="checkbox" name="internet" id="internet">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="housing-type">
-            <legend>Тип жилья:</legend>
-            <ul class="housing-type-list">
-              <li class="housing-type-item">
-                <label for="pool">Гостиница</label>
-                <input type="checkbox" name="pool" id="pool" checked>
-              </li>
-              <li class="housing-type-item">
+      <section class="filter">
+        <form action="" method="POST">
+            <fieldset class="infrastructure">
+              <legend>Инфрастркутура:</legend>
+              <ul class="infrastructure-list">
+                <li class="infrastructure-item">
+                  <label for="pool">Бассйен</label>
+                  <input type="checkbox" name="pool" id="pool" checked>
+                  </li>
+                <li class="infrastructure-item">
+                  <label for="parking">Парковка</label>
+                  <input type="checkbox" name="parking" id="parking">
+                </li>
+                <li class="infrastructure-item">
+                  <label for="internet">WI-FI</label>
+                  <input type="checkbox" name="internet" id="internet">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="housing-type">
+              <legend>Тип жилья:</legend>
+              <ul class="housing-type-list">
+                <li class="housing-type-item">
+                  <label for="pool">Гостиница</label>
+                  <input type="checkbox" name="pool" id="pool" checked>
+                </li>
+                <li class="housing-type-item">
                   <label for="parking">Мотель</label>
                   <input type="checkbox" name="parking" id="parking" checked>
-              </li>
-              <li class="housing-type-item">
+                </li>
+                <li class="housing-type-item">
                   <label for="internet">Апартаменты</label>
                   <input type="checkbox" name="internet" id="internet" checked>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="day-cost">
-            <legend>Стоимость в сутки(р):</legend>
-            <p>
-              <label for="min-cost">от</label>
-              <input type="text" name="min-cost" id="min-cost" value="0">
-            </p>
-            <p>
-              <label for="max-cost">до</label>
-              <input type="text" name="max-cost" id="max-cost" value="3000">
-            </p>
-            <input type="range" name="range-cost" id="range-cost" min="0" max="3500">
-          </fieldset>
-          <button class="filter-button" type="button">Показать</button>
-      </form>
+                </li>
+              </ul>
+              </fieldset>
+              <fieldset class="day-cost">
+                <legend>Стоимость в сутки(р):</legend>
+                <p>
+                  <label for="min-cost">от</label>
+                  <input type="text" name="min-cost" id="min-cost" value="0">
+                </p>
+                <p>
+                  <label for="max-cost">до</label>
+                  <input type="text" name="max-cost" id="max-cost" value="3000">
+                </p>
+                <input type="range" name="range-cost" id="range-cost" min="0" max="3500">
+              </fieldset>
+              <button class="filter-button" type="submit">Показать</button>
+        </form>
+      </section>
+      
 
       <p class="filter-atributes">
         <b>Найдено: 3</b>
@@ -81,66 +84,57 @@
       </p>
 
       <section class="hotels">
-          <h2 class="visually-hidden">Список отелей</h2>
-          <ul class="hotels-list">
-              <li class="hotels-item">
-                  <h3>
-                    <a href="">Amara Resort & SPA</a> 
-                  </h3>
-                  <p>
-                    <a href="">
-                      <img src="" alt="Amara Resort & SPA image">
-                    </a>
-                  </p>
-                  <p>
-                    <span>Гостиница</span>
-                    <span>От 4000 р.</span>
-                  </p>
-                  <p>
-                    <a href="#">Подробнее</a>
-                    <a href="#">Забронировать</a>
-                  </p>
-                  <p>Рейтинг: 8,5</p>
-              </li>
-              <li class="hotels-item">
-                  <h3>
-                    <a href="">Amara Resort & SPA</a> 
-                  </h3>
-                  <p>
-                    <a href="">
-                      <img src="" alt="Amara Resort & SPA image">
-                    </a>
-                  </p>
-                  <p>
-                    <span>Гостиница</span>
-                    <span>От 4000 р.</span>
-                  </p>
-                  <p>
-                    <a href="">Подробнее</a>
-                    <a href="">Забронировать</a>
-                  </p>
-                  <p>Рейтинг: 8,5</p>
-              </li>
-              <li class="hotels-item">
-                  <h3>
-                    <a href="">Amara Resort & SPA</a> 
-                  </h3>
-                  <p>
-                    <a href="">
-                      <img src="" alt="Amara Resort & SPA image">
-                    </a>
-                  </p>
-                  <p>
-                    <span>Гостиница</span>
-                    <span>От 4000 р.</span>
-                  </p>
-                  <p>
-                    <a href="">Подробнее</a>
-                    <a href="">Забронировать</a>
-                  </p>
-                  <p>Рейтинг: 8,5</p>
-              </li>
-          </ul>
+        <h2 class="visually-hidden">Список отелей</h2>
+        <ul class="hotels-list">
+          <li class="hotels-item">
+            <a href="">
+              <h3>Amara Resort & SPA</h3>
+              <p>
+                <img src="img/amara.jpg" alt="Amara Resort & SPA hotel">
+              </p>
+            </a>
+            <p class="hotels-info">
+              <span>Гостинница</span>
+              <span>от 4000 р.</span>
+            </p>
+            <p class="hotels-button">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>
+            </p>
+          </li>
+          <li class="hotels-item">
+            <a href="">
+              <h3>Desert quail inn</h3>
+              <p>
+                <img src="img/desert.jpg" alt="Desert quail inn motel">
+              </p>
+            </a>
+            <p class="hotels-info">
+              <span>Мотель</span>
+              <span>от 3000 р.</span>
+            </p>
+            <p class="hotels-button">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>
+            </p>
+          </li> 
+          <li class="hotels-item">
+            <a href="">
+              <h3>Villas at poco diablo</h3>
+              <p>
+                <img src="img/villas.jpg" alt="Villas at poco diablo apartment">
+              </p>
+            </a>
+            <p class="hotels-info">
+              <span>Апартаменты</span>
+              <span>от 2000 р.</span>
+            </p>
+            <p class="hotels-button">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button" href="#">Забронировать</a>
+            </p>
+          </li> 
+        </ul>
       </section>
     </main>
 
@@ -163,6 +157,6 @@
           <span>Website by</span>
           <a href="" class="button">html academy</a>
       </p>
-  </footer>
+    </footer>
   </body>
 </html>
