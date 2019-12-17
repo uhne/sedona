@@ -14,27 +14,61 @@
               <li><a href="info.html">Информация</a></li>
               <li><a href="photo-video.html">Фото и видео</a></li>
               <li><a href="state-map.html">Карта штата</a></li>
-              <li><a href="hotels.html">Гостинницы</a></li>
+              <li class="current"><a href="hotels.html">Гостинницы</a></li>
           </ul>
       </nav>
-  </header>
+    </header>
 
     <main class="container">
-      <header class="filter">
-        <ul class="structure-list">
-          <p>Инфрастркутура:</p>
-          <li class="structure-item">Бассейн</li>
-          <li class="structure-item">Парковка</li>
-          <li class="structure-item">WI-FI</li>
-        </ul>
-        <ul class="housing-list">
-          <p>Тип жилья:</p>
-          <li class="housing-item">Гостинница</li>
-          <li class="housing-item">Мотель</li>
-          <li class="housing-item">Апартаменты</li>
-        </ul>
-        <!--Add form-->
-      </header>
+      <form action="" method="POST">
+        <fieldset class="infrastructure">
+          <legend>Инфрастркутура:</legend>
+          <ul class="infrastructure-list">
+            <li class="infrastructure-item">
+              <label for="pool">Бассйен</label>
+              <input type="checkbox" name="pool" id="pool" checked>
+            </li>
+            <li class="infrastructure-item">
+                <label for="parking">Парковка</label>
+                <input type="checkbox" name="parking" id="parking">
+            </li>
+            <li class="infrastructure-item">
+                <label for="internet">WI-FI</label>
+                <input type="checkbox" name="internet" id="internet">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="housing-type">
+            <legend>Тип жилья:</legend>
+            <ul class="housing-type-list">
+              <li class="housing-type-item">
+                <label for="pool">Гостиница</label>
+                <input type="checkbox" name="pool" id="pool" checked>
+              </li>
+              <li class="housing-type-item">
+                  <label for="parking">Мотель</label>
+                  <input type="checkbox" name="parking" id="parking" checked>
+              </li>
+              <li class="housing-type-item">
+                  <label for="internet">Апартаменты</label>
+                  <input type="checkbox" name="internet" id="internet" checked>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="day-cost">
+            <legend>Стоимость в сутки(р):</legend>
+            <p>
+              <label for="min-cost">от</label>
+              <input type="text" name="min-cost" id="min-cost" value="0">
+            </p>
+            <p>
+              <label for="max-cost">до</label>
+              <input type="text" name="max-cost" id="max-cost" value="3000">
+            </p>
+            <input type="range" name="range-cost" id="range-cost" min="0" max="3500">
+          </fieldset>
+          <button class="filter-button" type="button">Показать</button>
+      </form>
 
       <p class="filter-atributes">
         <b>Найдено: 3</b>
